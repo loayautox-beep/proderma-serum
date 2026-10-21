@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سيروم PRODERMA رتينول 30ml | الدفع عند الاستلام - 4800 دج</title>
-<meta name="description" content="سيروم PRODERMA رتينول للوجه 30مل - عرض خاص 4800 دج بدل 6000 دج. علامة مسجلة مع تحاليل مخبرية. الدفع عند الاستلام والتوصيل لـ 58 ولاية.">
+<title>عروض سيروم PRODERMA رتينول 30ml | الدفع عند الاستلام</title>
+<meta name="description" content="اختاري عرض سيروم PRODERMA رتينول 30مل: عبوة بـ4000 دج، عبوتان بـ8600 دج، أو 3 عبوات مع الرابعة مجاناً بـ12500 دج. الدفع عند الاستلام.">
 <meta name="theme-color" content="#b8476b">
 <style>
   :root{
@@ -27,7 +27,7 @@
   img{max-width:100%}
   :focus-visible{outline:2px solid var(--rose-dark);outline-offset:2px}
 
-  /* ===== Top marquee ===== */
+  /* الشريط العلوي المتحرك */
   .pd-bar{overflow:hidden;background:var(--rose);color:#fff;white-space:nowrap;direction:ltr}
   .pd-bar-track{display:inline-flex;animation:pd-scroll 30s linear infinite}
   .pd-bar-track span{
@@ -38,11 +38,11 @@
   }
   @keyframes pd-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  /* ===== Images ===== */
+  /* صور المنتج */
   .pd-stack{max-width:700px;margin:0 auto}
   .pd-stack img{display:block;width:100%;height:auto}
 
-  /* ===== Order form ===== */
+  /* نموذج الطلب */
   .pd-order{
     max-width:560px;
     margin:0 auto;
@@ -55,6 +55,7 @@
   }
   .pd-order h2 a{color:var(--rose-dark);text-decoration:none;direction:ltr;unicode-bidi:embed}
   .pd-order input,.pd-order select{
+    display:block;
     width:100%;
     padding:13px 14px;
     margin:0 0 12px;
@@ -72,6 +73,64 @@
     outline-offset:1px;
     border-color:var(--rose);
   }
+  .pd-offers{
+    margin:0 0 14px;
+    padding:12px;
+    background:#fff7ed;
+    border:1px solid #fed7aa;
+    border-radius:10px;
+    text-align:right;
+    line-height:1.8;
+  }
+  .pd-offers p{margin:5px 0;font-weight:700}
+  .pd-offers p+p{border-top:1px dashed #fdba74;padding-top:8px;margin-top:8px}
+  .pd-offer-status{
+    font-size:.92rem;
+    font-weight:700;
+    line-height:1.7;
+    margin:8px 0 0;
+    color:var(--rose-dark);
+  }
+
+  /* عروض تفاعلية قابلة للاختيار */
+  .pd-packages{display:grid;gap:12px;margin:0 0 16px}
+  .pd-package{
+    position:relative;
+    display:block;
+    border:2px solid var(--line);
+    border-radius:14px;
+    background:#fff;
+    padding:15px 16px;
+    cursor:pointer;
+    transition:border-color .18s ease,background .18s ease,box-shadow .18s ease;
+  }
+  .pd-package:hover{border-color:var(--rose)}
+  .pd-package:has(input:checked){border-color:var(--rose);background:var(--soft);box-shadow:0 0 0 2px rgba(184,71,107,.10)}
+  .pd-package input[type="radio"]{
+    position:absolute;
+    top:16px;
+    inset-inline-start:14px;
+    width:20px;
+    height:20px;
+    min-height:0;
+    margin:0;
+    accent-color:var(--rose);
+  }
+  .pd-package-head{display:flex;align-items:center;gap:10px;padding-inline-end:28px;margin-bottom:7px}
+  .pd-package-number{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:30px;height:30px;border-radius:50%;
+    background:var(--rose);color:#fff;font-weight:800;
+  }
+  .pd-package-title{font-weight:800;font-size:1.03rem;line-height:1.6}
+  .pd-package-benefits{margin:0 0 10px;padding:0;list-style:none;line-height:1.8;color:#5d4942}
+  .pd-package-benefits li::before{content:"✓ ";color:var(--rose-dark);font-weight:900}
+  .pd-package-prices{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .pd-package-old{color:#9a8a84;font-size:.98rem;font-weight:500}
+  .pd-package-new{color:var(--rose-dark);font-size:1.35rem;font-weight:900}
+  .pd-package-tag{display:inline-block;margin-top:8px;padding:4px 9px;border-radius:999px;background:#fbe4eb;color:var(--rose-dark);font-size:.82rem;font-weight:800}
+  .pd-package-hint{text-align:center;color:#6b5a53;font-size:.9rem;line-height:1.7;margin:0 0 12px}
+  @media (prefers-reduced-motion:reduce){.pd-package{transition:none}}
   .pd-card{
     border:1.5px solid var(--line);
     border-radius:10px;
@@ -118,6 +177,7 @@
     margin:12px 0 0;
     font-size:.95rem;
     color:#6b5a53;
+    line-height:1.7;
   }
   .pd-success{
     text-align:center;
@@ -127,7 +187,7 @@
     padding:24px 10px;
   }
 
-  /* ===== Sticky mobile CTA ===== */
+  /* زر الطلب الثابت على الهاتف */
   .pd-sticky{
     position:fixed;
     inset-inline:0;
@@ -146,13 +206,8 @@
   }
   .pd-sticky:hover{background:var(--rose-dark)}
   .pd-sticky.is-hidden{transform:translateY(100%);opacity:0;pointer-events:none}
-  @media (max-width:700px){
-    body{padding-bottom:70px}
-  }
-  @media (min-width:701px){
-    .pd-sticky{display:none}
-  }
-
+  @media (max-width:700px){body{padding-bottom:70px}}
+  @media (min-width:701px){.pd-sticky{display:none}}
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     .pd-bar-track{animation:none}
@@ -162,156 +217,284 @@
 </head>
 <body>
 
-<!-- 1. Marquee -->
+<!-- 1. الشريط العلوي المتحرك -->
 <div class="pd-bar" aria-hidden="true">
   <div class="pd-bar-track">
-    <span>🔥 عرض محدود: 4800 دج فقط بدل 6000 دج</span><span>🎁 صابونة Proderma Marseille هدية مع السيروم</span><span>🚚 توصيل سريع لـ 58 ولاية</span><span>💳 الدفع عند الاستلام</span><span>🔥 عرض محدود: 4800 دج فقط بدل 6000 دج</span><span>🎁 صابونة Proderma Marseille هدية مع السيروم</span><span>🚚 توصيل سريع لـ 58 ولاية</span><span>💳 الدفع عند الاستلام</span>
+    <span>🎁 عبوة + صابون مجاني: 4000 دج بدل 6000 دج</span>
+    <span>🚚 عبوتان + صابون وتوصيل مجاني: 8600 دج بدل 9600 دج</span>
+    <span>🔥 3 عبوات + الرابعة مجاناً + صابون وتوصيل مجاني: 12500 دج</span>
+    <span>💳 الدفع عند الاستلام</span>
+    <span>🎁 عبوة + صابون مجاني: 4000 دج بدل 6000 دج</span>
+    <span>🚚 عبوتان + صابون وتوصيل مجاني: 8600 دج بدل 9600 دج</span>
+    <span>🔥 3 عبوات + الرابعة مجاناً + صابون وتوصيل مجاني: 12500 دج</span>
+    <span>💳 الدفع عند الاستلام</span>
   </div>
 </div>
 
-<!-- 2. Product images -->
+<!-- 2. صور المنتج: احتفظ بأسماء الصور نفسها داخل مجلد الصفحة -->
 <div class="pd-stack">
   <img src="01.jpg" alt="سيروم PRODERMA رتينول في العبوة البنفسجية: سر إشراقتك يبدأ من هنا" width="1254" height="1254" fetchpriority="high">
-  <img src="02.jpg" alt="امرأة في معطف أبيض تحمل ورقة تحليل مخبري: علامة مسجلة وحاصلة على جميع التحاليل اللازمة" width="1254" height="1254" loading="lazy" decoding="async">
-  <img src="03.jpg" alt="نشرتا تحليل مخبري Bulletin D'analyse على خلفية خشبية بلون البنفسج الفاتح" width="914" height="1280" loading="lazy" decoding="async">
-  <img src="04.jpg" alt="امرأة في معطف أبيض مع سماعة طبية تحمل السيروم: لماذا تختارين RÉTINOL" width="1254" height="1254" loading="lazy" decoding="async">
-  <img src="05.jpg" alt="قبل وبعد: يخلصكي من البقع الداكنة ويوحد لون البشرة" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="06.jpg" alt="قبل وبعد: يخلصكي من خطوط التجاعيد المزعجة" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="07.jpg" alt="قبل وبعد: يخلصكي من أثار الحبوب وتوسع المسامات" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="08.jpg" alt="قبل وبعد: يمنحكي بشرة زجاجية أكثر نضارة وتوهجا" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="09.jpg" alt="نتائج حقيقية: قبل وبعد على الوجه مع تحسن الاحمرار والبقع" width="1024" height="1024" loading="lazy" decoding="async">
-  <img src="10.jpg" alt="نتائج حقيقية: قبل وبعد على منطقة الرقبة" width="1254" height="1254" loading="lazy" decoding="async">
-  <img src="11.jpg" alt="نتائج حقيقية: قبل وبعد على الوجه من الجانبين" width="1024" height="1024" loading="lazy" decoding="async">
-  <img src="12.jpg" alt="آراء بعض عملائنا: تعليقات بيضاء تتضمن Rachelle Rachà" width="1023" height="1280" loading="lazy" decoding="async">
-  <img src="13.jpg" alt="آراء بعض عملائنا: تعليقات بيضاء Had l produit c'est du top" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="14.jpg" alt="آراء بعض عملائنا: تعليقات داكنة بسم الله ماشاء الله" width="1024" height="1280" loading="lazy" decoding="async">
-  <img src="15.jpg" alt="هدية: صابونة Proderma Marseille بجانب سيروم الرتينول - وزيد عندي ليكم مفاجاة" width="960" height="1280" loading="lazy" decoding="async">
-  <img src="16.jpg" alt="بشرتك تستاهل منتج مضمون: اطلبي سيروم PRODERMA الآن" width="1254" height="1254" loading="lazy" decoding="async">
+  <img src="02.jpg" alt="امرأة في معطف أبيض تحمل ورقة تحليل مخبري" width="1254" height="1254" loading="lazy" decoding="async">
+  <img src="03.jpg" alt="نشرتا تحليل مخبري Bulletin D'analyse" width="914" height="1280" loading="lazy" decoding="async">
+  <img src="04.jpg" alt="امرأة في معطف أبيض مع سماعة طبية تحمل السيروم" width="1254" height="1254" loading="lazy" decoding="async">
+  <img src="05.jpg" alt="نتائج قبل وبعد للبقع الداكنة وتوحيد لون البشرة" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="06.jpg" alt="نتائج قبل وبعد لخطوط التجاعيد" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="07.jpg" alt="نتائج قبل وبعد لآثار الحبوب والمسام" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="08.jpg" alt="بشرة أكثر نضارة وتوهجاً" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="09.jpg" alt="صور قبل وبعد للبشرة" width="1024" height="1024" loading="lazy" decoding="async">
+  <img src="10.jpg" alt="صور قبل وبعد لمنطقة الرقبة" width="1254" height="1254" loading="lazy" decoding="async">
+  <img src="11.jpg" alt="صور قبل وبعد للوجه من الجانبين" width="1024" height="1024" loading="lazy" decoding="async">
+  <img src="12.jpg" alt="آراء بعض العملاء" width="1023" height="1280" loading="lazy" decoding="async">
+  <img src="13.jpg" alt="آراء بعض العملاء" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="14.jpg" alt="آراء بعض العملاء" width="1024" height="1280" loading="lazy" decoding="async">
+  <img src="15.jpg" alt="هدية صابونة Proderma Marseille بجانب سيروم الرتينول" width="960" height="1280" loading="lazy" decoding="async">
+  <img src="16.jpg" alt="اطلبي سيروم PRODERMA الآن" width="1254" height="1254" loading="lazy" decoding="async">
 </div>
 
-<!-- 3. Order form -->
+<!-- 3. نموذج الطلب -->
 <div class="pd-order" id="order">
-  <h2>للطلب إملأ المعلومات أو اتصل بنا على الرقم <a href="tel:0770017909">0770017909</a></h2>
+  <h2>
+    للطلب املئي المعلومات أو اتصلي بنا على الرقم
+    <a href="tel:0770017909">0770017909</a>
+  </h2>
+
   <form id="pd-form" novalidate>
-    <input name="name" type="text" autocomplete="name" placeholder="الإسم كامل *" required>
-    <input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="رقم الهاتف *" pattern="0[5-7][0-9]{8}" title="مثال: 0770017909" required>
-    <select name="wilaya" required>
+    <!-- رقم الهاتف هو أول حقل -->
+    <input
+      name="phone"
+      type="tel"
+      inputmode="tel"
+      autocomplete="tel"
+      placeholder="رقم الهاتف *"
+      pattern="0[5-7][0-9]{8}"
+      title="مثال: 0770017909"
+      required
+    >
+
+    <input
+      name="name"
+      type="text"
+      autocomplete="name"
+      placeholder="الاسم الكامل *"
+      required
+    >
+
+    <select name="wilaya" id="pd-wilaya" autocomplete="address-level1" required>
       <option value="" selected disabled>الولاية *</option>
-      <option>01- أدرار</option>
-      <option>02- الشلف</option>
-      <option>03- الأغواط</option>
-      <option>04- أم البواقي</option>
-      <option>05- باتنة</option>
-      <option>06- بجاية</option>
-      <option>07- بسكرة</option>
-      <option>08- بشار</option>
-      <option>09- البليدة</option>
-      <option>10- البويرة</option>
-      <option>11- تمنراست</option>
-      <option>12- تبسة</option>
-      <option>13- تلمسان</option>
-      <option>14- تيارت</option>
-      <option>15- تيزي وزو</option>
-      <option>16- الجزائر</option>
-      <option>17- الجلفة</option>
-      <option>18- جيجل</option>
-      <option>19- سطيف</option>
-      <option>20- سعيدة</option>
-      <option>21- سكيكدة</option>
-      <option>22- سيدي بلعباس</option>
-      <option>23- عنابة</option>
-      <option>24- قالمة</option>
-      <option>25- قسنطينة</option>
-      <option>26- المدية</option>
-      <option>27- مستغانم</option>
-      <option>28- المسيلة</option>
-      <option>29- معسكر</option>
-      <option>30- ورقلة</option>
-      <option>31- وهران</option>
-      <option>32- البيض</option>
-      <option>33- إليزي</option>
-      <option>34- برج بوعريريج</option>
-      <option>35- بومرداس</option>
-      <option>36- الطارف</option>
-      <option>37- تندوف</option>
-      <option>38- تيسمسيلت</option>
-      <option>39- الوادي</option>
-      <option>40- خنشلة</option>
-      <option>41- سوق أهراس</option>
-      <option>42- تيبازة</option>
-      <option>43- ميلة</option>
-      <option>44- عين الدفلة</option>
-      <option>45- النعامة</option>
-      <option>46- عين تيموشنت</option>
-      <option>47- غرداية</option>
-      <option>48- غليزان</option>
-      <option>49- تيميمون</option>
-      <option>50- برج باجي مختار</option>
-      <option>51- أولاد جلال</option>
-      <option>52- بني عباس</option>
-      <option>53- عين صالح</option>
-      <option>54- عين قزام</option>
-      <option>55- تقرت</option>
-      <option>56- جانت</option>
-      <option>57- المغير</option>
-      <option>58- المنيعة</option>
+      <option value="01- أدرار">01- أدرار</option>
+      <option value="02- الشلف">02- الشلف</option>
+      <option value="03- الأغواط">03- الأغواط</option>
+      <option value="04- أم البواقي">04- أم البواقي</option>
+      <option value="05- باتنة">05- باتنة</option>
+      <option value="06- بجاية">06- بجاية</option>
+      <option value="07- بسكرة">07- بسكرة</option>
+      <option value="08- بشار">08- بشار</option>
+      <option value="09- البليدة">09- البليدة</option>
+      <option value="10- البويرة">10- البويرة</option>
+      <option value="11- تمنراست">11- تمنراست</option>
+      <option value="12- تبسة">12- تبسة</option>
+      <option value="13- تلمسان">13- تلمسان</option>
+      <option value="14- تيارت">14- تيارت</option>
+      <option value="15- تيزي وزو">15- تيزي وزو</option>
+      <option value="16- الجزائر">16- الجزائر</option>
+      <option value="17- الجلفة">17- الجلفة</option>
+      <option value="18- جيجل">18- جيجل</option>
+      <option value="19- سطيف">19- سطيف</option>
+      <option value="20- سعيدة">20- سعيدة</option>
+      <option value="21- سكيكدة">21- سكيكدة</option>
+      <option value="22- سيدي بلعباس">22- سيدي بلعباس</option>
+      <option value="23- عنابة">23- عنابة</option>
+      <option value="24- قالمة">24- قالمة</option>
+      <option value="25- قسنطينة">25- قسنطينة</option>
+      <option value="26- المدية">26- المدية</option>
+      <option value="27- مستغانم">27- مستغانم</option>
+      <option value="28- المسيلة">28- المسيلة</option>
+      <option value="29- معسكر">29- معسكر</option>
+      <option value="30- ورقلة">30- ورقلة</option>
+      <option value="31- وهران">31- وهران</option>
+      <option value="32- البيض">32- البيض</option>
+      <option value="33- إليزي">33- إليزي</option>
+      <option value="34- برج بوعريريج">34- برج بوعريريج</option>
+      <option value="35- بومرداس">35- بومرداس</option>
+      <option value="36- الطارف">36- الطارف</option>
+      <option value="37- تندوف">37- تندوف</option>
+      <option value="38- تيسمسيلت">38- تيسمسيلت</option>
+      <option value="39- الوادي">39- الوادي</option>
+      <option value="40- خنشلة">40- خنشلة</option>
+      <option value="41- سوق أهراس">41- سوق أهراس</option>
+      <option value="42- تيبازة">42- تيبازة</option>
+      <option value="43- ميلة">43- ميلة</option>
+      <option value="44- عين الدفلى">44- عين الدفلى</option>
+      <option value="45- النعامة">45- النعامة</option>
+      <option value="46- عين تيموشنت">46- عين تيموشنت</option>
+      <option value="47- غرداية">47- غرداية</option>
+      <option value="48- غليزان">48- غليزان</option>
+      <option value="49- تيميمون">49- تيميمون</option>
+      <option value="50- برج باجي مختار">50- برج باجي مختار</option>
+      <option value="51- أولاد جلال">51- أولاد جلال</option>
+      <option value="52- بني عباس">52- بني عباس</option>
+      <option value="53- عين صالح">53- عين صالح</option>
+      <option value="54- عين قزام">54- عين قزام</option>
+      <option value="55- تقرت">55- تقرت</option>
+      <option value="56- جانت">56- جانت</option>
+      <option value="57- المغير">57- المغير</option>
+      <option value="58- المنيعة">58- المنيعة</option>
     </select>
 
-    <div class="pd-card">
-      <b>سيروم PRODERMA رتينول 30ml</b>
-      <small>🎁 صابونة Proderma Marseille هدية + الدفع عند الاستلام</small>
-      <div class="pd-price">4,800 DA <s>6,000 DA</s></div>
-      <div class="pd-qty">
-        <span>الكمية</span>
-        <button type="button" id="pd-minus" aria-label="إنقاص الكمية">−</button>
-        <output id="pd-q" aria-live="polite">1</output>
-        <button type="button" id="pd-plus" aria-label="زيادة الكمية">+</button>
-      </div>
-    </div>
+    <input
+      name="commune"
+      id="pd-commune"
+      type="text"
+      autocomplete="address-level2"
+      placeholder="البلدية *"
+      required
+    >
 
-    <button class="pd-btn" type="submit" id="pd-submit">أطلب الآن - <span id="pd-total">4,800</span> DA</button>
-    <p class="pd-note">الدفع عند الاستلام · التوصيل لـ 58 ولاية</p>
+    <!-- اختاري العرض بالضغط على البطاقة -->
+    <h3 style="margin:4px 0 12px;font-size:1.1rem;">اختاري العرض المناسب لكِ</h3>
+    <div class="pd-packages" role="radiogroup" aria-label="اختيار عرض السيروم">
+      <label class="pd-package">
+        <input type="radio" name="package" value="pack1" checked required>
+        <div class="pd-package-head">
+          <span class="pd-package-number">1</span>
+          <span class="pd-package-title">العرض الأول: عبوة واحدة</span>
+        </div>
+        <ul class="pd-package-benefits">
+          <li>عبوة سيروم PRODERMA رتينول 30ml</li>
+          <li>صابونة Proderma Marseille مجانية 🎁</li>
+        </ul>
+        <div class="pd-package-prices">
+          <s class="pd-package-old">6,000 دج</s>
+          <span class="pd-package-new">4,000 دج</span>
+        </div>
+        <span class="pd-package-tag">عرض التوفير</span>
+      </label>
+
+      <label class="pd-package">
+        <input type="radio" name="package" value="pack2" required>
+        <div class="pd-package-head">
+          <span class="pd-package-number">2</span>
+          <span class="pd-package-title">العرض الثاني: عبوتان</span>
+        </div>
+        <ul class="pd-package-benefits">
+          <li>عبوتان من سيروم PRODERMA</li>
+          <li>صابونة Proderma Marseille مجانية 🎁</li>
+          <li>توصيل مجاني 🚚</li>
+        </ul>
+        <div class="pd-package-prices">
+          <s class="pd-package-old">9,600 دج</s>
+          <span class="pd-package-new">8,600 دج</span>
+        </div>
+        <span class="pd-package-tag">توفير 1,000 دج + توصيل مجاني</span>
+      </label>
+
+      <label class="pd-package">
+        <input type="radio" name="package" value="pack3" required>
+        <div class="pd-package-head">
+          <span class="pd-package-number">3</span>
+          <span class="pd-package-title">العرض الثالث: 3 عبوات والرابعة مجاناً</span>
+        </div>
+        <ul class="pd-package-benefits">
+          <li>ادفعي ثمن 3 عبوات واحصلي على الرابعة مجاناً 🎁</li>
+          <li>صابونة Proderma Marseille مجانية</li>
+          <li>توصيل مجاني 🚚</li>
+        </ul>
+        <div class="pd-package-prices">
+          <s class="pd-package-old">14,400 دج</s>
+          <span class="pd-package-new">12,500 دج</span>
+        </div>
+        <span class="pd-package-tag">4 عبوات بالمجموع + توصيل مجاني</span>
+      </label>
+    </div>
+    <p class="pd-package-hint" id="pd-package-summary" aria-live="polite">العرض المختار: عبوة واحدة + صابون مجاني — الإجمالي 4,000 دج.</p>
+
+    <button class="pd-btn" type="submit" id="pd-submit">
+      أطلبي الآن - <span id="pd-total">4,000</span> دج
+    </button>
+    <p class="pd-note">الدفع عند الاستلام · التوصيل إلى 58 ولاية · التوصيل مجاني مع العرض الثاني والثالث</p>
   </form>
 </div>
 
-<!-- 4. Sticky mobile CTA -->
-<a class="pd-sticky" id="pd-sticky" href="#order">أطلب الآن</a>
+<!-- 4. زر الطلب الثابت على الهاتف -->
+<a class="pd-sticky" id="pd-sticky" href="#order">أطلبي الآن</a>
 
 <script>
 (function () {
   "use strict";
 
-  // ====== WEBHOOK N8N — غيّر الرابط أدناه برابطك الخاص ======
+  // استبدلي هذا الرابط برابط Webhook الحقيقي من n8n
   var WEBHOOK_URL = "https://YOUR-N8N-DOMAIN/webhook/proderma-order";
 
-  var UNIT_PRICE = 4800;
-  var qty = 1;
+  var PACKAGES = {
+    pack1: {
+      name: "العرض الأول - عبوة واحدة + صابون مجاني",
+      paidBottles: 1,
+      freeBottles: 0,
+      totalBottles: 1,
+      oldPrice: 6000,
+      price: 4000,
+      freeDelivery: false,
+      offerCode: "pack1"
+    },
+    pack2: {
+      name: "العرض الثاني - عبوتان + صابون مجاني + توصيل مجاني",
+      paidBottles: 2,
+      freeBottles: 0,
+      totalBottles: 2,
+      oldPrice: 9600,
+      price: 8600,
+      freeDelivery: true,
+      offerCode: "pack2"
+    },
+    pack3: {
+      name: "العرض الثالث - 3 عبوات والرابعة مجاناً + صابون وتوصيل مجاني",
+      paidBottles: 3,
+      freeBottles: 1,
+      totalBottles: 4,
+      oldPrice: 14400,
+      price: 12500,
+      freeDelivery: true,
+      offerCode: "pack3"
+    }
+  };
 
   var form = document.getElementById("pd-form");
-  var qtyOut = document.getElementById("pd-q");
   var totalEl = document.getElementById("pd-total");
+  var summaryEl = document.getElementById("pd-package-summary");
   var submitBtn = document.getElementById("pd-submit");
-  var minusBtn = document.getElementById("pd-minus");
-  var plusBtn = document.getElementById("pd-plus");
+  var packageInputs = Array.prototype.slice.call(
+    form.querySelectorAll('input[name="package"]')
+  );
 
   function formatPrice(n) {
     return n.toLocaleString("en-US");
   }
 
-  function updateTotal() {
-    qtyOut.textContent = String(qty);
-    totalEl.textContent = formatPrice(UNIT_PRICE * qty);
-    minusBtn.disabled = qty <= 1;
-    plusBtn.disabled = qty >= 10;
+  function getSelectedPackage() {
+    var selected = form.querySelector('input[name="package"]:checked');
+    return selected ? PACKAGES[selected.value] : null;
   }
 
-  plusBtn.addEventListener("click", function () {
-    if (qty < 10) { qty++; updateTotal(); }
+  function updatePackageSelection() {
+    var selected = getSelectedPackage();
+    var cards = form.querySelectorAll(".pd-package");
+
+    Array.prototype.forEach.call(cards, function (card) {
+      var radio = card.querySelector('input[name="package"]');
+      card.setAttribute("aria-checked", radio.checked ? "true" : "false");
+    });
+
+    if (!selected) return;
+
+    totalEl.textContent = formatPrice(selected.price);
+    summaryEl.textContent = "العرض المختار: " + selected.name +
+      " — الإجمالي " + formatPrice(selected.price) + " دج.";
+  }
+
+  packageInputs.forEach(function (radio) {
+    radio.addEventListener("change", updatePackageSelection);
   });
-  minusBtn.addEventListener("click", function () {
-    if (qty > 1) { qty--; updateTotal(); }
-  });
-  updateTotal();
+  updatePackageSelection();
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -321,35 +504,50 @@
       return;
     }
 
+    var selected = getSelectedPackage();
+    if (!selected) {
+      alert("يرجى اختيار أحد العروض قبل إرسال الطلب.");
+      return;
+    }
+
     var data = new FormData(form);
     var payload = {
       name: String(data.get("name") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
       wilaya: String(data.get("wilaya") || "").trim(),
-      qty: qty,
-      unit_price: UNIT_PRICE,
-      total: UNIT_PRICE * qty,
-      gift: "Proderma Marseille soap"
+      commune: String(data.get("commune") || "").trim(),
+      offer_code: selected.offerCode,
+      offer: selected.name,
+      paid_bottles: selected.paidBottles,
+      free_bottles: selected.freeBottles,
+      total_bottles: selected.totalBottles,
+      old_price: selected.oldPrice,
+      total: selected.price,
+      currency: "DZD",
+      gift: "Proderma Marseille soap",
+      free_delivery: selected.freeDelivery
     };
 
     submitBtn.disabled = true;
+    submitBtn.textContent = "جارٍ إرسال الطلب...";
 
     fetch(WEBHOOK_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     })
-      .then(function (res) {
-        if (!res.ok) { throw new Error("HTTP " + res.status); }
-        form.innerHTML = '<p class="pd-success">تم استلام طلبك ✅<br>سنتصل بك قريباً لتأكيد الطلب.</p>';
-      })
-      .catch(function () {
-        submitBtn.disabled = false;
-        alert("حدث خطأ أثناء إرسال الطلب.\nيرجى المحاولة مرة أخرى أو الاتصال بنا على 0770017909");
-      });
+    .then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      form.innerHTML = '<p class="pd-success">تم استلام طلبك بنجاح ✅<br>سنتصل بك قريباً لتأكيد الطلب.</p>';
+    })
+    .catch(function () {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'أطلبي الآن - <span id="pd-total">' + formatPrice((getSelectedPackage() || PACKAGES.pack1).price) + '</span> دج';
+      alert("حدث خطأ أثناء إرسال الطلب.\nيرجى المحاولة مرة أخرى أو الاتصال بنا على 0770017909");
+    });
   });
 
-  // ====== Sticky CTA: مخفي عندما النموذج ظاهر ======
+  // إخفاء زر الطلب الثابت عندما يكون نموذج الطلب ظاهراً
   var sticky = document.getElementById("pd-sticky");
   var orderSection = document.getElementById("order");
   if ("IntersectionObserver" in window) {
@@ -359,6 +557,5 @@
   }
 })();
 </script>
-
 </body>
 </html>
